@@ -9,12 +9,6 @@ int main()
 	Connection conn;
 	conn.connect("127.0.0.1", 3306, "root", "123456", "chat");
 
-	/*Connection conn;
-	char sql[1024] = { 0 };
-	sprintf(sql, "insert into user(name,age,sex) values('%s',%d,'%s')",
-		"zhang san", 20, "male");
-	conn.connect("127.0.0.1", 3306, "root", "123456", "chat");
-	conn.update(sql);*/
 
 	clock_t begin = clock();
 	
@@ -22,11 +16,7 @@ int main()
 		//ConnectionPool *cp = ConnectionPool::getConnectionPool();
 		for (int i = 0; i < 2500; ++i)
 		{
-			/*char sql[1024] = { 0 };
-			sprintf(sql, "insert into user(name,age,sex) values('%s',%d,'%s')",
-				"zhang san", 20, "male");
-			shared_ptr<Connection> sp = cp->getConnection();
-			sp->update(sql);*/
+			
 			Connection conn;
 			char sql[1024] = { 0 };
 			sprintf(sql, "insert into user(name,age,sex) values('%s',%d,'%s')",
@@ -39,11 +29,7 @@ int main()
 		//ConnectionPool *cp = ConnectionPool::getConnectionPool();
 		for (int i = 0; i < 2500; ++i)
 		{
-			/*char sql[1024] = { 0 };
-			sprintf(sql, "insert into user(name,age,sex) values('%s',%d,'%s')",
-				"zhang san", 20, "male");
-			shared_ptr<Connection> sp = cp->getConnection();
-			sp->update(sql);*/
+
 			Connection conn;
 			char sql[1024] = { 0 };
 			sprintf(sql, "insert into user(name,age,sex) values('%s',%d,'%s')",
@@ -56,11 +42,7 @@ int main()
 		//ConnectionPool *cp = ConnectionPool::getConnectionPool();
 		for (int i = 0; i < 2500; ++i)
 		{
-			/*char sql[1024] = { 0 };
-			sprintf(sql, "insert into user(name,age,sex) values('%s',%d,'%s')",
-				"zhang san", 20, "male");
-			shared_ptr<Connection> sp = cp->getConnection();
-			sp->update(sql);*/
+
 			Connection conn;
 			char sql[1024] = { 0 };
 			sprintf(sql, "insert into user(name,age,sex) values('%s',%d,'%s')",
@@ -73,11 +55,7 @@ int main()
 		//ConnectionPool *cp = ConnectionPool::getConnectionPool();
 		for (int i = 0; i < 2500; ++i)
 		{
-			/*char sql[1024] = { 0 };
-			sprintf(sql, "insert into user(name,age,sex) values('%s',%d,'%s')",
-				"zhang san", 20, "male");
-			shared_ptr<Connection> sp = cp->getConnection();
-			sp->update(sql);*/
+
 			Connection conn;
 			char sql[1024] = { 0 };
 			sprintf(sql, "insert into user(name,age,sex) values('%s',%d,'%s')",
@@ -107,11 +85,6 @@ int main()
 		conn.connect("127.0.0.1", 3306, "root", "123456", "chat");
 		conn.update(sql);
 
-		/*shared_ptr<Connection> sp = cp->getConnection();
-		char sql[1024] = { 0 };
-		sprintf(sql, "insert into user(name,age,sex) values('%s',%d,'%s')",
-			"zhang san", 20, "male");
-		sp->update(sql);*/
 	}
 #endif
 
